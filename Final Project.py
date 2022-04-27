@@ -55,4 +55,13 @@ class Sketch():
     def move(self,distance):
         distance = distane.split(',')
         for i in range(int(distance)):
-            
+            if self.Direction == "U":
+                self.Ypos += 1
+            elif self.Direction == "D":
+                self.Ypos -= 1
+            elif self.Direction == "R":
+                self.Xpos += 1
+            elif self.Direction == "L":
+                self.Xpos -= 1
+            if self.Pen == "U":
+                self.Caanvas
